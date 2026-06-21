@@ -1,0 +1,60 @@
+=== YOUR LINKEDIN PROFILE ===
+https://www.linkedin.com/in/nazmul-hasan-619565291/
+
+=== HEADLINE (copy & paste) ===
+Entrepreneur | Multiple Business Owner | Owner @ Bubu-Dudu & Zuomio | Web App Developer | SEO Specialist | $6,000+ Revenue | US & BD E-Commerce
+
+=== ABOUT (copy & paste) ===
+I build e-commerce websites, optimize SEO & page speed, and solve payment gateways for businesses in Bangladesh and the United States.
+
+I'm MD Nazmul Hasan — an entrepreneur and multiple business owner with $6,000+ in revenue to date. I OWN Bubu & Dudu BD (bubu-dudu.store) and Zuomio LLC (zuomio.com). I built and maintain MediaCube, Lumiere Beauty, and Arafat LLC (arafatllc.shop).
+
+💻 Web App Development
+• Custom React e-commerce stores with admin dashboards
+• Multi-category shops — zuomio.com (81 products, 8 categories)
+• Order management & customer data panels
+
+🔍 SEO Specialist
+• On-page SEO, meta tags, structured data
+• Google Search Console & sitemap setup
+
+⚡ Website Speed Optimization
+• Google PageSpeed / Lighthouse optimization
+• Core Web Vitals, image compression, WebP
+
+💳 Payment Gateway
+• US: Stripe, PayPal, Apple Pay
+• Bangladesh: COD, bKash, Nagad, SSLCommerz
+
+🏢 US LLC Formation — 72-hour Express (Wyoming)
+
+🚀 Live Projects (Owner / Built by Me)
+• bubu-dudu.store — Owner · Bangladesh PWA
+• zuomio.com — Owner · Multi-niche US store
+• arafatllc.shop — Luxury men's leather (Arafat LLC)
+• mediacube.store — Medicube skincare
+• lumiere-beauty — Luxury beauty store
+
+📍 Bangladesh | Global clients
+📧 nazmulhasan257038@gmail.com | 📱 +880 1969-827902
+
+=== PROFILE SETTINGS ===
+Name: MD NAZMUL HASAN
+Pronouns: he/him
+Website: (your portfolio URL after domain connect)
+Company: Zuomio LLC
+Location: Bangladesh
+
+Social Link 1: https://github.com/nazmul-cyber
+Social Link 2: https://www.facebook.com/nazmul.hasan.alif.03/
+Social Link 3: https://zuomio.com
+
+=== FEATURED ===
+1. Bubu & Dudu (Owner) → https://bubu-dudu.store/
+2. Zuomio (Owner) → https://zuomio.vercel.app
+3. Arafat LLC → https://arafatllc.vercel.app
+4. MediaCube → https://mediacube.vercel.app
+5. GitHub → https://github.com/nazmul-cyber
+
+=== SKILLS ===
+Web Development, SEO, Website Speed Optimization, E-Commerce, Shopify, Amazon, Digital Marketing, US LLC Formation, Payment Gateway Integration, React, TypeScript

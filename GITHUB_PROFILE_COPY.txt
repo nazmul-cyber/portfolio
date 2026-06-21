@@ -1,0 +1,28 @@
+=== GITHUB PROFILE — nazmul-cyber ===
+https://github.com/nazmul-cyber
+
+Go to: https://github.com/settings/profile
+
+Name:        MD NAZMUL HASAN
+Bio:         Web App Developer | SEO Specialist | E-Commerce Entrepreneur | US & BD Payment Gateway | Zuomio LLC & Arafat LLC | Bangladesh
+Pronouns:    he/him
+Company:     Zuomio LLC
+Location:    Bangladesh
+Website:     (your portfolio URL)
+
+Social accounts:
+  1. https://www.linkedin.com/in/nazmul-hasan-619565291/
+  2. https://www.facebook.com/nazmul.hasan.alif.03/
+  3. https://zuomio.com
+
+=== PROFILE README REPO ===
+Create repo named exactly: nazmul-cyber
+Copy content from: C:\Users\User\nazmul-cyber\README.md
+
+=== PIN THESE REPOS ===
+- web-app-development
+- seo-optimization-services
+- website-speed-optimization
+- zuomio-store
+- mediacube-store
+- payment-gateway-integration

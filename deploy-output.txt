@@ -1,0 +1,15 @@
+﻿npx.cmd : Vercel CLI 54.14.5 (Node.js 24.16.0)
+At line:1 char:39
++ ... ion C:\Users\User\portfolio; npx.cmd vercel --prod --yes 2>&1 | Out-F ...
++                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 54.14.5 (Node.js 24.16.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Retrieving projectΓÇª
+Deploying nazmul213/portfolio
+Uploading [--------------------] (0.0B/441B)
+Uploading [====================] (441.0B/441B)
+  Inspect         https://vercel.com/nazmul213/portfolio/DDeCjXH3Y9StB8kqKmUU3JLY1E5Z
+  Production      https://portfolio-prj3rnidu-nazmul213.vercel.app
+BuildingΓÇª
+https://portfolio-prj3rnidu-nazmul213.vercel.app

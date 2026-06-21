@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="200" height="48">
+  <defs>
+    <linearGradient id="mark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="url(#mark)"/>
+  <text x="20" y="31" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="800" fill="#ffffff">NH</text>
+  <text x="50" y="22" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="700" fill="#0f172a">MD Nazmul Hasan</text>
+  <text x="50" y="36" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Web Developer · Entrepreneur</text>
+</svg>

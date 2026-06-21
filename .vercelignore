@@ -1,0 +1,7 @@
+deploy*.txt
+deploy*.bat
+*.ps1
+.git
+README.md
+GITHUB_*
+LINKEDIN_*
