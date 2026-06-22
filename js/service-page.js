@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <button type="button" class="btn btn-cart btn-block" id="addToCartBtn">Add to Cart</button>
               <button type="button" class="btn btn-primary btn-block" id="proceedCheckoutBtn">Proceed to Checkout</button>
               <a href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent(`Hi, I want to order: ${service.name}`)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">Order via WhatsApp</a>
+              ${renderServiceGithubButton(service.slug, 'btn btn-github btn-block')}
             </div>
           </div>
         </div>

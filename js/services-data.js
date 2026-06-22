@@ -54,6 +54,46 @@ function serviceImage(slug, ext = 'jpg') {
   return `assets/services/${slug}.${ext}?v=${IMG_VER}`;
 }
 
+const GITHUB_USER = 'nazmul-cyber';
+
+const SERVICE_GITHUB_REPOS = [
+  'web-app-development',
+  'seo-optimization-services',
+  'website-speed-optimization',
+  'payment-gateway-integration',
+  'shopify-store-services',
+  'us-llc-formation',
+  'digital-marketing-services',
+  'zuomio-store',
+  'arafatllc-shop',
+];
+
+const SERVICE_GITHUB_MAP = {
+  'web-app-development': 'web-app-development',
+  'tailored-website': 'web-app-development',
+  'seo-optimization': 'seo-optimization-services',
+  'website-speed-fix': 'website-speed-optimization',
+  'us-llc-formation': 'us-llc-formation',
+  'mercury-bank-setup': 'us-llc-formation',
+  'stripe-setup': 'payment-gateway-integration',
+  'shopify-setup': 'shopify-store-services',
+  'ecommerce-store-build': 'shopify-store-services',
+  'us-payment-gateway': 'payment-gateway-integration',
+  'bd-payment-gateway': 'payment-gateway-integration',
+  'digital-marketing': 'digital-marketing-services',
+  'meta-ads': 'digital-marketing-services',
+  'google-ads': 'digital-marketing-services',
+};
+
+function getGithubRepoUrl(repo) {
+  return `https://github.com/${GITHUB_USER}/${repo}`;
+}
+
+function getServiceGithubUrl(slug) {
+  const repo = SERVICE_GITHUB_MAP[slug];
+  return repo ? getGithubRepoUrl(repo) : null;
+}
+
 const PORTFOLIO_SERVICES = [
   {
     slug: 'web-app-development',
@@ -348,4 +388,10 @@ function renderServiceBadge(slug) {
   if (b === 'popular') return '<span class="svc-badge svc-badge--popular">Popular</span>';
   if (b === 'best-deal') return '<span class="svc-badge svc-badge--deal">Best Deal</span>';
   return '';
+}
+
+function renderServiceGithubButton(slug, className = 'btn btn-github btn-sm') {
+  const url = getServiceGithubUrl(slug);
+  if (!url) return '';
+  return `<a href="${url}" target="_blank" rel="noopener" class="${className}">View on GitHub</a>`;
 }

@@ -277,6 +277,7 @@ function serviceCardHtml(s, linkPrefix = 'service.html?slug=') {
         <span class="hire-price">${typeof t === 'function' ? t('price.from') : 'from'} <strong>${formatPrice(s.price)}</strong></span>
         <div class="hire-card-actions">
           <a href="${linkPrefix}${s.slug}" class="btn btn-about btn-sm">About this service</a>
+          ${typeof renderServiceGithubButton === 'function' ? renderServiceGithubButton(s.slug, 'btn btn-github btn-sm') : ''}
           <button type="button" class="btn btn-cart btn-sm" data-add-cart="${s.slug}">Add to Cart</button>
         </div>
       </div>
@@ -335,6 +336,24 @@ function initHireCardLinks(container) {
     el.addEventListener('click', (e) => e.stopPropagation());
     el.addEventListener('touchend', (e) => e.stopPropagation(), { passive: true });
   });
+}
+
+function renderServiceRepos(container) {
+  if (!container || typeof SERVICE_GITHUB_REPOS === 'undefined') return;
+  const repos = SERVICE_GITHUB_REPOS.map(repo => `
+    <li><a href="${getGithubRepoUrl(repo)}" target="_blank" rel="noopener">${repo}</a></li>
+  `).join('');
+
+  container.innerHTML = `
+    <section class="service-repos reveal">
+      <h2>
+        <svg class="service-repos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        Services Repos
+      </h2>
+      <ul class="service-repos-list">${repos}</ul>
+    </section>
+  `;
+  initReveal();
 }
 
 function initCartButtons() {
