@@ -37,13 +37,18 @@ def fit_in_square(icon, size=512, bg=(255, 255, 255, 255)):
     return canvas
 
 
+def icon_mark_only(full):
+    w, h = full.size
+    return full.crop((0, 0, w, int(h * 0.58)))
+
+
 def trim_logo():
     full = trim_logo_rgba()
-    full.save(os.path.join(ROOT, 'logo.png'))
+    icon_only = icon_mark_only(full)
 
-    w, h = full.size
-    # favicon = icon mark only (above NAZMUL text), aspect ratio preserved
-    icon_only = full.crop((0, 0, w, int(h * 0.52)))
+    # Nav + favicon: geometric mark only (no NAZMUL wordmark)
+    icon_only.save(os.path.join(ROOT, 'logo-mark.png'))
+    full.save(os.path.join(ROOT, 'logo.png'))
     fit_in_square(icon_only).save(os.path.join(ROOT, 'logo-icon.png'))
     fit_in_square(icon_only, 64).convert('RGB').save(os.path.join(ROOT, 'favicon.png'))
 

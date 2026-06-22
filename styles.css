@@ -81,9 +81,9 @@ body {
 }
 
 .nav-logo-mark {
-  height: 44px;
-  width: auto;
-  max-width: 148px;
+  height: 40px;
+  width: 40px;
+  max-width: 40px;
   flex-shrink: 0;
   object-fit: contain;
   display: block;
@@ -2808,15 +2808,9 @@ a.btn-github:hover {
   }
 
   .nav-logo-mark {
-    height: 38px;
-    max-width: 110px;
-  }
-
-  .nav-logo-name {
-    font-size: 0.74rem;
-    overflow: visible;
-    text-overflow: unset;
-    white-space: nowrap;
+    height: 36px;
+    width: 36px;
+    max-width: 36px;
   }
 
   .lang-toggle-btn {

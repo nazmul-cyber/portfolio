@@ -22,15 +22,10 @@ function renderNav(active) {
     { href: 'index.html#contact', labelKey: 'nav.contact', id: 'contact', cta: true }
   ];
   const lang = typeof getLang === 'function' ? getLang() : 'en';
-  const sub = typeof t === 'function' ? t('nav.sub') : 'Web Developer · Entrepreneur';
 
   el.innerHTML = `
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logo.png" alt="NAZMUL" class="nav-logo-mark" />
-      <span class="nav-logo-text">
-        <span class="nav-logo-name">${SITE.name}</span>
-        <span class="nav-logo-sub" data-i18n="nav.sub">${sub}</span>
-      </span>
+    <a href="index.html" class="nav-logo" aria-label="${SITE.name}">
+      <img src="assets/logo-mark.png?v=2" alt="NAZMUL" class="nav-logo-mark" width="40" height="40" />
     </a>
     <div class="lang-toggle" aria-label="Language">
       <button type="button" class="lang-toggle-btn${lang === 'en' ? ' active' : ''}" data-lang="en">EN</button>
