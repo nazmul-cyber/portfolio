@@ -340,23 +340,21 @@ function initHireCardLinks(container) {
 }
 
 function renderServiceRepos(container) {
-  if (!container || typeof PORTFOLIO_SERVICES === 'undefined') return;
-  const items = PORTFOLIO_SERVICES
-    .filter(s => getServiceGithubUrl(s.slug))
-    .map(s => `
-      <li>
-        <a href="${getServiceGithubUrl(s.slug)}" target="_blank" rel="noopener">${s.name}</a>
-        <span class="service-repos-repo">${getServiceGithubRepo(s.slug)}</span>
-      </li>
-    `).join('');
+  if (!container || typeof FEATURED_SERVICE_LINKS === 'undefined') return;
+  const items = FEATURED_SERVICE_LINKS.map(item => `
+    <li>
+      <a href="${getFeaturedServiceUrl(item)}">${item.label}</a>
+      <span class="service-repos-repo">${getFeaturedServiceName(item)}</span>
+    </li>
+  `).join('');
 
   container.innerHTML = `
     <section class="service-repos reveal">
       <h2>
         <svg class="service-repos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-        Portfolio Services → GitHub
+        Services Repos
       </h2>
-      <p class="service-repos-desc">Each service on this portfolio links to its GitHub repo.</p>
+      <p class="service-repos-desc">Order services directly from this portfolio — prices in ৳, add to cart or WhatsApp order.</p>
       <ul class="service-repos-list">${items}</ul>
     </section>
   `;
