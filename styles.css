@@ -1290,11 +1290,11 @@ body {
 
 .contact-item--whatsapp .contact-icon { color: var(--whatsapp); }
 
-.contact-item--github:hover { border-color: #0d9488; }
+.contact-item--github:hover { border-color: #475569; }
 
-.contact-item--github .contact-label { color: #0d9488; }
+.contact-item--github .contact-label { color: #475569; }
 
-.contact-item--github .contact-icon { color: #0d9488; }
+.contact-item--github .contact-icon { color: #475569; }
 
 .contact-icon {
   width: 20px;
@@ -1449,14 +1449,15 @@ body {
 }
 
 .skill-action-btn--github {
-  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  background: #334155;
   color: #fff;
-  border-color: #0f766e;
+  border-color: #334155;
 }
 
 .skill-action-btn--github:hover {
-  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
-  border-color: #0d9488;
+  background: #475569;
+  border-color: #475569;
+  color: #fff;
 }
 
 .skill-action-btn--download {
@@ -1507,14 +1508,14 @@ body {
 }
 
 .btn-github {
-  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  background: #334155;
   color: #fff;
-  border: 1px solid #0f766e;
+  border: 1px solid #334155;
 }
 
 .btn-github:hover {
-  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
-  border-color: #0d9488;
+  background: #475569;
+  border-color: #475569;
   color: #fff;
 }
 
