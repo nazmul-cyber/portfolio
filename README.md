@@ -1,5 +1,9 @@
 # Nazmul Hasan — E-Portfolio
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](CHANGELOG.md)
+[![Live](https://img.shields.io/badge/live-portfolio-2563eb?style=flat-square)](https://portfolio-eight-red-48.vercel.app)
+[![GitHub](https://img.shields.io/badge/github-nazmul--cyber-181717?style=flat-square)](https://github.com/nazmul-cyber)
+
 A modern, responsive portfolio website showcasing projects in energy science and full-stack development.
 
 ## Preview Locally
