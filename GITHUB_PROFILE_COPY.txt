@@ -44,6 +44,10 @@ Arafat LLC:    https://arafatllc.shop
 
 URL format: https://portfolio-eight-red-48.vercel.app/service.html?slug=SLUG
 
+=== GITHUB PINNED REPOS ===
+Remove pins: portfolio, bubu-dudu-store
+Pin service repos only — see E:\nazmul-projects\nazmul-cyber\PIN_REPOS.txt
+
 === CONTACT ===
 Email:    nazmulhasan257038@gmail.com
 WhatsApp: +8801969827902
