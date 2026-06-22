@@ -1,0 +1,6 @@
+Vercel CLI 54.14.5 (Node.js 24.16.0)
+Retrieving project…
+Deploying nazmul213/portfolio
+  Inspect         https://vercel.com/nazmul213/portfolio/7Rq1AzTMuFMXPn99DfH8ZZau6KcD
+  Production      https://portfolio-n0ndy01vo-nazmul213.vercel.app
+https://portfolio-n0ndy01vo-nazmul213.vercel.appBuilding…

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order web development, Google Ads, Meta Ads, SEO, Shopify, payment gateways & more from MD Nazmul Hasan." />
+  <meta property="og:title" content="Services ΓÇö MD Nazmul Hasan" />
+  <meta property="og:description" content="Order web development, Google Ads, Meta Ads, SEO, Shopify, payment gateways & more from MD Nazmul Hasan." />
+  <meta property="og:image" content="https://portfolio-eight-red-48.vercel.app/assets/og-share.jpg?v=circle2" />
+  <meta property="og:url" content="https://portfolio-eight-red-48.vercel.app/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MD Nazmul Hasan" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services ΓÇö MD Nazmul Hasan" />
+  <meta name="twitter:description" content="Order web development, Google Ads, Meta Ads, SEO, Shopify, payment gateways & more from MD Nazmul Hasan." />
+  <meta name="twitter:image" content="https://portfolio-eight-red-48.vercel.app/assets/og-share.jpg?v=circle2" />
+  <title>Services ΓÇö MD Nazmul Hasan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="js/social-meta.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="site-nav"></nav>
+  <main class="services-page">
+    <section class="page-hero">
+      <div class="container">
+        <span class="tag">Hire Me</span>
+        <h1>Order a Service</h1>
+        <p>Fixed starting prices in αº│ (BDT) ΓÇö 30% advance before work, 70% after completion. Browse by category below.</p>
+      </div>
+    </section>
+    <section class="section services-page-section">
+      <div class="container">
+        <div class="service-sections" id="servicesSections"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="site-footer"></footer>
+  <script src="js/services-data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/reviews-data.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderNav('services');
+      renderFooter();
+      renderServiceSections(document.getElementById('servicesSections'));
+    });
+  </script>
+</body>
+</html>

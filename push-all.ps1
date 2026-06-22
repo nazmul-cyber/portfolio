@@ -1,8 +1,8 @@
-# Push all portfolio projects to GitHub (account: nazmul213)
+# Push all portfolio projects to GitHub (account: nazmul-cyber)
 # Run: powershell -ExecutionPolicy Bypass -File push-all.ps1
 
 $ErrorActionPreference = "Stop"
-$username = "nazmul213"
+$username = "nazmul-cyber"
 $base = "https://github.com/$username"
 
 function Push-Repo($path, $repo) {
@@ -25,8 +25,8 @@ function Push-Repo($path, $repo) {
     Write-Host "Pushed $repo" -ForegroundColor Green
 }
 
-Push-Repo "$env:USERPROFILE\nazmul213" "$username"
-Push-Repo "$env:USERPROFILE\portfolio" "portfolio"
+Push-Repo "$env:USERPROFILE\nazmul-cyber" "$username"
+Push-Repo "E:\nazmul-projects\portfolio" "portfolio"
 Push-Repo "$env:USERPROFILE\Desktop\pv-panel-simulation" "pv-panel-simulation"
 Push-Repo "$env:USERPROFILE\todo-app" "todo-app"
 Push-Repo "$env:USERPROFILE\ecommerce" "bubu-dudu-store"

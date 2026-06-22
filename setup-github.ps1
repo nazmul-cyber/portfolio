@@ -2,8 +2,8 @@
 # Run in PowerShell:  powershell -ExecutionPolicy Bypass -File setup-github.ps1
 
 $ErrorActionPreference = "Stop"
-$username = "nazmul-hasan-alif"
-$email = "store@bubududu.bd"
+$username = "nazmul-cyber"
+$email = "nazmulhasan257038@gmail.com"
 $name = "Nazmul Hasan"
 
 git config --global user.name $name

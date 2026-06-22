@@ -17,7 +17,7 @@ function Push-Repo($path, $repo) {
 }
 
 Push-Repo "$env:USERPROFILE\nazmul-cyber" "$username"
-Push-Repo "$env:USERPROFILE\portfolio" "portfolio"
+Push-Repo "E:\nazmul-projects\portfolio" "portfolio"
 Push-Repo "$env:USERPROFILE\Desktop\pv-panel-simulation" "pv-panel-simulation"
 Push-Repo "$env:USERPROFILE\todo-app" "todo-app"
 Push-Repo "$env:USERPROFILE\ecommerce" "bubu-dudu-store"
