@@ -23,9 +23,10 @@
   <script src="js/social-meta.js" defer></script>
   <script src="js/perf.js" defer></script>
   <meta name="author" content="MD Nazmul Hasan" />
-  <link rel="stylesheet" href="styles.min.css?v=perf32" />
+  <link rel="stylesheet" href="styles.min.css?v=perf37" />
   <style>
-    .nav,.hero{contain:layout style}.hero-photo-img{max-width:100%;height:auto}
+    .nav{contain:layout style}
+    .hero-photo-img{max-width:100%;height:auto}
   </style>
 </head>
 <body>
@@ -34,7 +35,7 @@
   <main>
     <section class="hero" id="hero">
       <div class="container hero-grid">
-        <div class="hero-text reveal">
+        <div class="hero-text">
           <div class="hero-badges">
             <span class="hero-badge" data-i18n="badge.bd">Bangladesh</span>
             <span class="hero-badge hero-badge--expert" data-i18n="badge.expert">Web Developer</span>
@@ -66,10 +67,9 @@
               <span data-i18n="hero.cta.whatsapp">WhatsApp</span>
             </a>
           </div>
-
         </div>
-        <div class="hero-photo reveal">
-          <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" onerror="this.src='assets/profile.jpg'" />
+        <div class="hero-photo">
+          <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
         </div>
       </div>
     </section>
@@ -80,8 +80,8 @@
           <span class="tag" data-i18n="about.tag">About Me</span>
           <h2 data-i18n="about.title">Building businesses &amp; websites</h2>
         </div>
-        <div class="about-grid reveal">
-          <p data-i18n="about.p1">
+        <div class="about-grid">
+          <p class="reveal" data-i18n="about.p1">
             I'm <strong>MD Nazmul Hasan</strong> — an <strong>entrepreneur</strong>, <strong>web developer</strong>, and <strong>KUET student</strong> (Energy Science and Engineering) from Bangladesh.
             I <strong>own</strong> <a href="https://bubu-dudu.store/" target="_blank" rel="noopener" class="text-link">Bubu &amp; Dudu BD</a>
             and <a href="https://zuomio.com" target="_blank" rel="noopener" class="text-link">Zuomio LLC</a>.
@@ -91,7 +91,7 @@
             <a href="https://arafatllc.shop" target="_blank" rel="noopener" class="text-link">Arafat LLC</a>
             — I work on them daily. Besides that, I build <strong>tailored custom websites</strong> from scratch for clients.
           </p>
-          <p data-i18n="about.p2">
+          <p class="reveal" data-i18n="about.p2">
             I also build <strong>custom software</strong>, run <strong>Google Ads &amp; Meta ad campaigns</strong>, create <strong>content</strong>,
             and automate workflows with <strong>AI</strong>. Total income: <strong>Revenue $16000+</strong> from stores and client work.
             As one of Bangladesh's most experienced hands-on developers, I deliver production-ready work — not just demos.
@@ -134,11 +134,12 @@
             </div>
             <div>
               <h3>Nazmul Tweaks Tool</h3>
-              <p>Windows optimization app I built — 38 tweaks, winget app installs, System Refresh on desktop right-click, MAS activation, PC Manager, and 6 themes. Portable .exe, no Python needed.</p>
-              <span class="skill-badge">v1.0.0 · Personal Project</span>
+              <p>Windows optimization app I built — 38 tweaks, winget app installs, System Refresh on desktop right-click, MAS activation, PC Manager, and 6 themes. WinUtil-style one-click open in PowerShell — no install folder.</p>
+              <span class="skill-badge">v1.0.5 · Personal Project</span>
               <div class="skill-actions">
                 <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--github">GitHub</a>
                 <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool/releases/latest/download/Nazmul-Tweaks-Tool.exe" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--download">Download EXE</a>
+                <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool#open-the-app-1-line--like-winutil" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--download">One-Click Open</a>
               </div>
             </div>
           </article>
