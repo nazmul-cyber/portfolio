@@ -1403,9 +1403,23 @@ body {
 
 .skill-showcase-card a:not(.skill-action-btn) { color: var(--accent); text-decoration: none; }
 
-.skill-showcase-card a.skill-action-btn--github,
-.skill-showcase-card a.skill-action-btn--github:hover {
-  color: #fff;
+a.skill-action-btn--github,
+a.skill-action-btn--github:hover,
+a.skill-action-btn--github:visited,
+a.skill-action-btn--github:active,
+a.btn-github,
+a.btn-github:hover,
+a.btn-github:visited,
+a.btn-github:active {
+  background: #181717 !important;
+  color: #ffffff !important;
+  border-color: #181717 !important;
+}
+
+a.skill-action-btn--github:hover,
+a.btn-github:hover {
+  background: #333333 !important;
+  border-color: #333333 !important;
 }
 
 .skill-showcase-card--link {
