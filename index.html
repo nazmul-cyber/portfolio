@@ -21,11 +21,12 @@
   <link rel="apple-touch-icon" href="assets/logo-icon.png" />
   <link rel="preload" as="image" href="assets/source/profile-main.jpg?v=2" fetchpriority="high" />
   <script src="js/social-meta.js" defer></script>
-<meta name="author" content="MD Nazmul Hasan" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=ghwhite3" />
+  <script src="js/perf.js" defer></script>
+  <meta name="author" content="MD Nazmul Hasan" />
+  <link rel="stylesheet" href="styles.min.css?v=perf32" />
+  <style>
+    .nav,.hero{contain:layout style}.hero-photo-img{max-width:100%;height:auto}
+  </style>
 </head>
 <body>
   <nav class="nav" id="site-nav"></nav>
@@ -41,7 +42,7 @@
             <span class="hero-badge" data-i18n="badge.owner">Multi-Business Owner</span>
             <span class="hero-badge hero-badge--accent" data-i18n="badge.revenue">Revenue $16000+</span>
           </div>
-          <h1>MD Nazmul Hasan</h1>
+          <h1>MD Nazmul Hasan <a href="assets/md-nazmul-hasan-resume.pdf" target="_blank" rel="noopener" class="hero-resume-link" data-i18n="hero.resume.link">resume</a></h1>
           <p class="hero-headline" data-i18n="hero.headline">Entrepreneur &amp; Web Developer</p>
           <div class="skill-pills" aria-label="Skills">
             <span class="pill">Entrepreneur</span>
@@ -65,6 +66,7 @@
               <span data-i18n="hero.cta.whatsapp">WhatsApp</span>
             </a>
           </div>
+
         </div>
         <div class="hero-photo reveal">
           <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" onerror="this.src='assets/profile.jpg'" />
@@ -99,7 +101,7 @@
           <div class="stat-card"><span class="stat-num">3000+</span><span class="stat-label" data-i18n="stat.customers">Happy Customers</span></div>
           <div class="stat-card"><span class="stat-num">4+</span><span class="stat-label" data-i18n="stat.years">Years Experience</span></div>
           <div class="stat-card"><span class="stat-num">200+</span><span class="stat-label" data-i18n="stat.stores">Live Stores</span></div>
-          <div class="stat-card"><span class="stat-num">17</span><span class="stat-label" data-i18n="stat.services">Services Offered</span></div>
+          <div class="stat-card"><span class="stat-num" data-service-count>31</span><span class="stat-label" data-i18n="stat.services">Services Offered</span></div>
         </div>
       </div>
     </section>
@@ -123,6 +125,20 @@
               <div class="skill-actions">
                 <a href="https://github.com/nazmul-cyber/pv-panel-simulation" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--github" data-i18n="skills.pv.github">GitHub</a>
                 <a href="https://github.com/nazmul-cyber/pv-panel-simulation/releases/download/v1.0.0/PV_Panel_Simulation_Setup.exe" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--download" data-i18n="skills.pv.download">Download EXE</a>
+              </div>
+            </div>
+          </article>
+          <article class="skill-showcase-card skill-showcase-card--pv">
+            <div class="skill-showcase-icon">
+              <img src="assets/nazmul-tweaks-tool.png" alt="Nazmul Tweaks Tool software" loading="lazy" />
+            </div>
+            <div>
+              <h3>Nazmul Tweaks Tool</h3>
+              <p>Windows optimization app I built — 38 tweaks, winget app installs, System Refresh on desktop right-click, MAS activation, PC Manager, and 6 themes. Portable .exe, no Python needed.</p>
+              <span class="skill-badge">v1.0.0 · Personal Project</span>
+              <div class="skill-actions">
+                <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--github">GitHub</a>
+                <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool/releases/latest/download/Nazmul-Tweaks-Tool.exe" target="_blank" rel="noopener" class="skill-action-btn skill-action-btn--download">Download EXE</a>
               </div>
             </div>
           </article>
@@ -167,6 +183,11 @@
             </div>
           </a>
         </div>
+
+        <div class="linkedin-embed-section reveal">
+          <h3 class="linkedin-embed-title">PV Panel Simulation — LinkedIn Post</h3>
+          <div class="linkedin-embed-wrap" data-linkedin-src="https://www.linkedin.com/embed/feed/update/urn:li:share:7474805610421747712"></div>
+        </div>
       </div>
     </section>
 
@@ -179,7 +200,7 @@
         </div>
         <div class="hire-grid" id="featuredServices"></div>
         <div class="section-cta reveal">
-          <a href="services.html" class="btn btn-primary" data-i18n="services.cta">View All 17 Services →</a>
+          <a href="services.html" class="btn btn-primary" data-i18n="services.cta">View All 31 Services →</a>
         </div>
       </div>
     </section>
@@ -212,7 +233,10 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
               <span data-i18n="payments.intl">US &amp; International</span>
             </h3>
+            <p class="payment-group-note" data-i18n="payments.intl.note">I set up Mercury, Payoneer, Stripe &amp; more for US LLC clients — <a href="services.html#section-business">view US Business services →</a></p>
             <div class="payment-chips">
+              <span class="payment-chip payment-chip--logo"><img src="assets/payments/mercury.svg?v=official13" alt="Mercury Bank" class="payment-logo" width="120" height="46" /></span>
+              <span class="payment-chip payment-chip--logo"><img src="assets/payments/payoneer.svg?v=official13" alt="Payoneer" class="payment-logo" width="120" height="46" /></span>
               <span class="payment-chip payment-chip--logo"><img src="assets/payments/stripe.svg?v=official9" alt="Stripe" class="payment-logo" width="100" height="46" /></span>
               <span class="payment-chip payment-chip--logo payment-logo-wrap payment-logo-wrap--binance"><img src="assets/payments/binance-vertical.svg?v=official11" alt="Binance" class="payment-logo payment-logo--binance" width="130" height="46" /></span>
               <span class="payment-chip payment-chip--logo payment-logo-wrap payment-logo-wrap--bank"><img src="assets/payments/bank-icon-chip.png?v=official12" alt="Bank Transfer" class="payment-logo payment-logo--bank" width="120" height="46" /></span>
@@ -244,6 +268,10 @@
               <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.128 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               <div><span class="contact-label" data-i18n="contact.linkedin">LinkedIn</span><span>nazmul-hasan</span></div>
             </a>
+            <a href="assets/md-nazmul-hasan-resume.pdf" target="_blank" rel="noopener" class="contact-item contact-item--resume">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              <div><span class="contact-label" data-i18n="contact.resume">Resume</span><span data-i18n="contact.resume.sub">View PDF</span></div>
+            </a>
             <a href="https://github.com/nazmul-cyber" target="_blank" rel="noopener" class="contact-item contact-item--github" id="githubLink">
               <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.754-1.335-1.754-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z"/></svg>
               <div><span class="contact-label" data-i18n="contact.github">GitHub</span><span>nazmul-cyber</span></div>
@@ -256,10 +284,11 @@
 
   <footer class="footer" id="site-footer"></footer>
 
-  <script src="js/services-data.js" defer></script>
+  <script src="js/services-catalog.js" defer></script>
   <script src="js/i18n.js" defer></script>
   <script src="js/reviews-data.js" defer></script>
   <script src="js/cart.js" defer></script>
+  <script src="js/service-about-bn.js" defer></script>
   <script src="js/common.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

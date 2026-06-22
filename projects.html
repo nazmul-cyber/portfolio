@@ -19,11 +19,10 @@
   <title>Live Projects — MD Nazmul Hasan</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/logo-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=proj2" />
+<link rel="stylesheet" href="styles.min.css?v=perf32" />
   <script src="js/social-meta.js" defer></script>
+  <script src="js/perf.js" defer></script>
+  <style>.nav,.hero{contain:layout style}</style>
 </head>
 <body>
   <nav class="nav" id="site-nav"></nav>
@@ -43,14 +42,13 @@
         </div>
         <div class="projects-grid">
           <article class="project-card project-card--static reveal">
-            <div class="project-card-icon project-card-icon--teal" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <div class="project-card-icon project-card-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             </div>
-            <span class="project-badge-premium">★ Premium Theme</span>
-            <div class="project-top project-top--teal">US Store</div>
-            <h3>Zuomio LLC</h3>
-            <p>Premium multi-niche US store — 81 products, 8 categories, admin dashboard, COD checkout, and full policy pages. Wyoming LLC · live at zuomio.com.</p>
-            <a href="https://zuomio.com" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Visit zuomio.com →</a>
+            <div class="project-top project-top--blue">Personal Website</div>
+            <h3>My Portfolio</h3>
+            <p>Professional portfolio with <span data-service-count>31</span> services, cart &amp; checkout, live projects, FAQ — order services directly online.</p>
+            <a href="https://portfolio-eight-red-48.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Visit portfolio →</a>
           </article>
 
           <article class="project-card reveal">
@@ -62,6 +60,17 @@
             <h3>Bubu &amp; Dudu BD</h3>
             <p>Production PWA with AI chat, Pathao, Firebase admin.</p>
             <a href="https://bubu-dudu.store/" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Visit bubu-dudu.store →</a>
+          </article>
+
+          <article class="project-card project-card--static reveal">
+            <div class="project-card-icon project-card-icon--teal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <span class="project-badge-premium">★ Premium Theme</span>
+            <div class="project-top project-top--teal">US Store</div>
+            <h3>Zuomio LLC</h3>
+            <p>Premium multi-niche US store — 81 products, 8 categories, admin dashboard, COD checkout, and full policy pages. Wyoming LLC · live at zuomio.com.</p>
+            <a href="https://zuomio.com" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Visit zuomio.com →</a>
           </article>
 
           <article class="project-card reveal">
@@ -117,8 +126,37 @@
               <a href="https://github.com/nazmul-cyber/pv-panel-simulation/releases/download/v1.0.0/PV_Panel_Simulation_Setup.exe" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Download EXE →</a>
             </div>
           </article>
+
+          <article class="project-card project-card--static reveal">
+            <div class="project-card-icon project-card-icon--teal" aria-hidden="true">
+              <img src="assets/nazmul-tweaks-tool.png" alt="" width="48" height="48" loading="lazy" />
+            </div>
+            <div class="project-top project-top--teal">Desktop Software</div>
+            <div class="project-top project-top--solar">Windows 10/11 · v1.0.0</div>
+            <h3>Nazmul Tweaks Tool</h3>
+            <p>All-in-one Windows optimizer — 38 tweaks, winget app installs, System Refresh on desktop right-click, MAS activation, and 6 themes. Packaged as portable .exe.</p>
+            <div class="project-card-actions">
+              <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool" target="_blank" rel="noopener" class="btn btn-github project-visit-btn">View on GitHub</a>
+              <a href="https://github.com/nazmul-cyber/Nazmul-Tweaks-Tool/releases/latest/download/Nazmul-Tweaks-Tool.exe" target="_blank" rel="noopener" class="btn btn-primary project-visit-btn">Download EXE →</a>
+            </div>
+          </article>
         </div>
 
+        <div class="linkedin-embed-section reveal">
+          <h3 class="linkedin-embed-title">LinkedIn Launch Post</h3>
+          <p class="linkedin-embed-desc">How I announced PV Panel Simulation v1.0.0 on LinkedIn.</p>
+          <div class="linkedin-embed-wrap">
+            <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:7474805610421747712"
+              title="PV Panel Simulation LinkedIn post"
+              height="700"
+              width="504"
+              frameborder="0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
 
       </div>
     </section>
