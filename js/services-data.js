@@ -56,18 +56,6 @@ function serviceImage(slug, ext = 'jpg') {
 
 const GITHUB_USER = 'nazmul-cyber';
 
-const SERVICE_GITHUB_REPOS = [
-  'web-app-development',
-  'seo-optimization-services',
-  'website-speed-optimization',
-  'payment-gateway-integration',
-  'shopify-store-services',
-  'us-llc-formation',
-  'digital-marketing-services',
-  'zuomio-store',
-  'arafatllc-shop',
-];
-
 const SERVICE_GITHUB_MAP = {
   'web-app-development': 'web-app-development',
   'tailored-website': 'web-app-development',
@@ -77,12 +65,15 @@ const SERVICE_GITHUB_MAP = {
   'mercury-bank-setup': 'us-llc-formation',
   'stripe-setup': 'payment-gateway-integration',
   'shopify-setup': 'shopify-store-services',
-  'ecommerce-store-build': 'shopify-store-services',
+  'ecommerce-store-build': 'zuomio-store',
   'us-payment-gateway': 'payment-gateway-integration',
   'bd-payment-gateway': 'payment-gateway-integration',
   'digital-marketing': 'digital-marketing-services',
   'meta-ads': 'digital-marketing-services',
   'google-ads': 'digital-marketing-services',
+  'ai-automation': 'web-app-development',
+  'video-editing': 'digital-marketing-services',
+  'amazon-business': 'digital-marketing-services',
 };
 
 function getGithubRepoUrl(repo) {
@@ -90,8 +81,14 @@ function getGithubRepoUrl(repo) {
 }
 
 function getServiceGithubUrl(slug) {
-  const repo = SERVICE_GITHUB_MAP[slug];
+  const service = getServiceBySlug(slug);
+  const repo = service?.githubRepo || SERVICE_GITHUB_MAP[slug];
   return repo ? getGithubRepoUrl(repo) : null;
+}
+
+function getServiceGithubRepo(slug) {
+  const service = getServiceBySlug(slug);
+  return service?.githubRepo || SERVICE_GITHUB_MAP[slug] || null;
 }
 
 const PORTFOLIO_SERVICES = [
@@ -352,6 +349,14 @@ const PORTFOLIO_SERVICES = [
   }
 ];
 
+PORTFOLIO_SERVICES.forEach((service) => {
+  if (SERVICE_GITHUB_MAP[service.slug]) {
+    service.githubRepo = SERVICE_GITHUB_MAP[service.slug];
+  }
+});
+
+const SERVICE_GITHUB_REPOS = [...new Set(PORTFOLIO_SERVICES.map(s => s.githubRepo).filter(Boolean))];
+
 function getServiceBySlug(slug) {
   return PORTFOLIO_SERVICES.find(s => s.slug === slug);
 }
@@ -392,6 +397,14 @@ function renderServiceBadge(slug) {
 
 function renderServiceGithubButton(slug, className = 'btn btn-github btn-sm') {
   const url = getServiceGithubUrl(slug);
-  if (!url) return '';
-  return `<a href="${url}" target="_blank" rel="noopener" class="${className}">View on GitHub</a>`;
+  const repo = getServiceGithubRepo(slug);
+  if (!url || !repo) return '';
+  return `<a href="${url}" target="_blank" rel="noopener" class="${className}" title="${repo}">View on GitHub</a>`;
+}
+
+function renderServiceGithubLink(slug, className = 'service-github-link') {
+  const url = getServiceGithubUrl(slug);
+  const repo = getServiceGithubRepo(slug);
+  if (!url || !repo) return '';
+  return `<a href="${url}" target="_blank" rel="noopener" class="${className}">${repo}</a>`;
 }

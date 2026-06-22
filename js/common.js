@@ -275,6 +275,7 @@ function serviceCardHtml(s, linkPrefix = 'service.html?slug=') {
       </a>
       <div class="hire-card-footer">
         <span class="hire-price">${typeof t === 'function' ? t('price.from') : 'from'} <strong>${formatPrice(s.price)}</strong></span>
+        ${typeof renderServiceGithubLink === 'function' && getServiceGithubRepo(s.slug) ? `<p class="hire-card-github">GitHub: ${renderServiceGithubLink(s.slug)}</p>` : ''}
         <div class="hire-card-actions">
           <a href="${linkPrefix}${s.slug}" class="btn btn-about btn-sm">About this service</a>
           ${typeof renderServiceGithubButton === 'function' ? renderServiceGithubButton(s.slug, 'btn btn-github btn-sm') : ''}
@@ -339,18 +340,24 @@ function initHireCardLinks(container) {
 }
 
 function renderServiceRepos(container) {
-  if (!container || typeof SERVICE_GITHUB_REPOS === 'undefined') return;
-  const repos = SERVICE_GITHUB_REPOS.map(repo => `
-    <li><a href="${getGithubRepoUrl(repo)}" target="_blank" rel="noopener">${repo}</a></li>
-  `).join('');
+  if (!container || typeof PORTFOLIO_SERVICES === 'undefined') return;
+  const items = PORTFOLIO_SERVICES
+    .filter(s => getServiceGithubUrl(s.slug))
+    .map(s => `
+      <li>
+        <a href="${getServiceGithubUrl(s.slug)}" target="_blank" rel="noopener">${s.name}</a>
+        <span class="service-repos-repo">${getServiceGithubRepo(s.slug)}</span>
+      </li>
+    `).join('');
 
   container.innerHTML = `
     <section class="service-repos reveal">
       <h2>
         <svg class="service-repos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-        Services Repos
+        Portfolio Services → GitHub
       </h2>
-      <ul class="service-repos-list">${repos}</ul>
+      <p class="service-repos-desc">Each service on this portfolio links to its GitHub repo.</p>
+      <ul class="service-repos-list">${items}</ul>
     </section>
   `;
   initReveal();

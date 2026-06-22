@@ -750,6 +750,43 @@ body {
   text-decoration: underline;
 }
 
+.service-repos-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.service-repos-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.service-repos-repo {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+
+.hire-card-github,
+.service-github-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.service-github-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+
+.service-github-link:hover {
+  text-decoration: underline;
+}
+
 .hire-grid--page {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="service-product-info reveal">
             <span class="service-page-tag">${service.tag}</span>
             <h1>${service.name}</h1>
+            ${getServiceGithubRepo(service.slug) ? `<p class="service-github-meta">GitHub: ${renderServiceGithubLink(service.slug)}</p>` : ''}
             <p class="service-gig-line">${service.short}</p>
             ${renderServicePricingBlock(service)}
             <div class="service-buy-card service-buy-card--inline">
