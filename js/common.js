@@ -1,4 +1,6 @@
 const WHATSAPP = '8801969827902';
+const GITHUB_URL = 'https://github.com/nazmul-cyber';
+const RESUME_URL = 'assets/md-nazmul-hasan-resume.pdf';
 const SITE = {
   name: 'MD Nazmul Hasan',
   tagline: 'Entrepreneur & Web Developer'
@@ -63,10 +65,10 @@ function renderFooter() {
       <div class="footer-links">
         <a href="services.html">Services</a>
         <a href="order.html">Order</a>
-        <a href="faq.html">FAQ</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="refund.html">Refund</a>
+        <a href="faq.html" data-i18n="footer.faq">${typeof t === 'function' ? t('footer.faq') : 'FAQ'}</a>
+        <a href="privacy.html" data-i18n="footer.privacy">${typeof t === 'function' ? t('footer.privacy') : 'Privacy'}</a>
+        <a href="terms.html" data-i18n="footer.terms">${typeof t === 'function' ? t('footer.terms') : 'Terms'}</a>
+        <a href="refund.html" data-i18n="footer.refund">${typeof t === 'function' ? t('footer.refund') : 'Refund'}</a>
       </div>
       <p class="footer-copy">© 2026 ${SITE.name}</p>
     </div>
@@ -115,6 +117,7 @@ function initReveal() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        entry.target.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
         observer.unobserve(entry.target);
       }
     });
@@ -250,12 +253,24 @@ function initReviewCarousel(id) {
   startAuto();
 }
 
+function serviceImageSources(imagePath) {
+  const base = (imagePath || '').split('?')[0];
+  const q = (imagePath || '').includes('?') ? '?' + imagePath.split('?')[1] : '';
+  const webp = base.replace(/\.(jpg|jpeg|png)$/i, '.webp') + q;
+  const fallback = base.match(/\.(webp|avif)$/i) ? base.replace(/\.(webp|avif)$/i, '.jpg') + q : imagePath;
+  return { webp, fallback };
+}
+
 function serviceCardHtml(s, linkPrefix = 'service.html?slug=') {
+  const src = serviceImageSources(s.image);
   return `
-    <article class="hire-card reveal">
+    <article class="hire-card">
       <a href="${linkPrefix}${s.slug}" class="hire-card-link" draggable="false">
         <div class="hire-card-thumb">
-          <img src="${s.image}" alt="${s.name}" loading="lazy" onerror="this.src='assets/profile-professional.jpg'" />
+          <picture>
+            <source srcset="${src.webp}" type="image/webp" />
+            <img src="${src.fallback}" alt="${s.name}" loading="lazy" decoding="async" width="400" height="225" onerror="this.src='assets/profile-professional.jpg'" />
+          </picture>
           <span class="service-tag-pill">${s.tag}</span>
           ${renderServiceBadge(s.slug)}
         </div>
@@ -265,26 +280,28 @@ function serviceCardHtml(s, linkPrefix = 'service.html?slug=') {
           <span class="meta-pill">${s.rating}</span>
           <span class="meta-pill meta-pill--sold">${formatSold(s.sold)}</span>
         </div>
-        <p class="hire-card-provider">By <strong>MD Nazmul Hasan</strong></p>
-        <p class="hire-card-desc">${s.short}</p>
+        <p class="hire-card-provider">${typeof t === 'function' ? t('card.by') : 'By <strong>MD Nazmul Hasan</strong>'}</p>
+        <p class="hire-card-desc">${typeof getServiceShortText === 'function' ? getServiceShortText(s) : s.short}</p>
       </a>
       <div class="hire-card-footer">
         <span class="hire-price">${typeof t === 'function' ? t('price.from') : 'from'} <strong>${formatPrice(s.price)}</strong></span>
-        ${typeof renderServiceGithubLink === 'function' && getServiceGithubRepo(s.slug) ? `<p class="hire-card-github">GitHub: ${renderServiceGithubLink(s.slug)}</p>` : ''}
         <div class="hire-card-actions">
-          <a href="${linkPrefix}${s.slug}" class="btn btn-about btn-sm">About this service</a>
-          ${typeof renderServiceGithubButton === 'function' ? renderServiceGithubButton(s.slug, 'btn btn-github btn-sm') : ''}
-          <button type="button" class="btn btn-cart btn-sm" data-add-cart="${s.slug}">Add to Cart</button>
+          <a href="${linkPrefix}${s.slug}" class="btn btn-about btn-sm">${typeof t === 'function' ? t('service.about.btn') : 'About this service'}</a>
+          <button type="button" class="btn btn-cart btn-sm" data-add-cart="${s.slug}">${typeof t === 'function' ? t('cart.add') : 'Add to Cart'}</button>
         </div>
       </div>
     </article>
   `;
 }
 
+function getServiceList() {
+  return typeof PORTFOLIO_SERVICES !== 'undefined' ? PORTFOLIO_SERVICES : [];
+}
+
 function renderServiceCards(container, options = {}) {
   if (!container) return;
   const { limit, linkPrefix = 'service.html?slug=', slugs } = options;
-  let list = PORTFOLIO_SERVICES;
+  let list = getServiceList();
   if (slugs && slugs.length) {
     list = slugs.map(s => getServiceBySlug(s)).filter(Boolean);
   } else if (limit) {
@@ -300,11 +317,12 @@ function renderServiceCards(container, options = {}) {
 function renderServiceSections(container, options = {}) {
   if (!container) return;
   const { linkPrefix = 'service.html?slug=' } = options;
+  const all = getServiceList();
   const order = typeof SERVICE_SECTION_ORDER !== 'undefined'
     ? SERVICE_SECTION_ORDER
-    : [...new Set(PORTFOLIO_SERVICES.map(s => s.tag))];
+    : [...new Set(all.map(s => s.tag))];
   const grouped = {};
-  PORTFOLIO_SERVICES.forEach(s => {
+  all.forEach(s => {
     if (!grouped[s.tag]) grouped[s.tag] = [];
     grouped[s.tag].push(s);
   });
@@ -351,7 +369,7 @@ function renderServiceRepos(container) {
         <svg class="service-repos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
         Services Repos
       </h2>
-      <p class="service-repos-desc">All 17 portfolio services — click any service to view details and order.</p>
+      <p class="service-repos-desc">All <span data-service-count>${typeof getServiceCount === 'function' ? getServiceCount() : ''}</span> portfolio services — click any service to view details and order.</p>
       <ul class="service-repos-list">${items}</ul>
     </section>
   `;
