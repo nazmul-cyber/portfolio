@@ -1,0 +1,75 @@
+﻿npx.cmd : Vercel CLI 54.14.5 (Node.js 24.16.0)
+At line:1 char:1
++ npx.cmd vercel ls --cwd "E:\nazmul-projects\portfolio" 2>&1 | Out-Fil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 54.14.5 (Node.js 24.16.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Retrieving projectΓÇª
+Fetching deployments in nazmul213
+> Deployments for nazmul213/portfolio [694ms]
+
+  Age     Project                 Deployment                                           Status      Environment     
+Duration     Username                   
+  2m      nazmul213/portfolio     https://portfolio-l4l8koos5-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  2m      nazmul213/portfolio     https://portfolio-kqbnm5df4-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  5m      nazmul213/portfolio     https://portfolio-byaabb072-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  7m      nazmul213/portfolio     https://portfolio-3ieymrnuy-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  8m      nazmul213/portfolio     https://portfolio-ple97b0kf-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  10m     nazmul213/portfolio     https://portfolio-q1f4q59yj-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  11m     nazmul213/portfolio     https://portfolio-lil35f47k-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  14m     nazmul213/portfolio     https://portfolio-716goshc8-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  17m     nazmul213/portfolio     https://portfolio-746x3gddd-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  21m     nazmul213/portfolio     https://portfolio-m5jjsd72n-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  23m     nazmul213/portfolio     https://portfolio-5w5g2xqwr-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  25m     nazmul213/portfolio     https://portfolio-qag61199g-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  27m     nazmul213/portfolio     https://portfolio-2q6udycny-nazmul213.vercel.app     UNKNOWN     Production      ?   
+         nazmulhasan257035-9855     
+  14h     nazmul213/portfolio     https://portfolio-ceoro7dc1-nazmul213.vercel.app     ΓùÅ Ready     Production      
+4s           nazmulhasan257035-9855     
+  14h     nazmul213/portfolio     https://portfolio-hactv15yk-nazmul213.vercel.app     ΓùÅ Ready     Production      
+3s           nazmulhasan257035-9855     
+  14h     nazmul213/portfolio     https://portfolio-q7z2my0no-nazmul213.vercel.app     ΓùÅ Ready     Production      
+3s           nazmulhasan257035-9855     
+  14h     nazmul213/portfolio     https://portfolio-3wwt0k97r-nazmul213.vercel.app     ΓùÅ Ready     Production      
+3s           nazmulhasan257035-9855     
+  15h     nazmul213/portfolio     https://portfolio-f2afhp2pf-nazmul213.vercel.app     ΓùÅ Ready     Production      
+3s           nazmulhasan257035-9855     
+  15h     nazmul213/portfolio     https://portfolio-kayagx4hs-nazmul213.vercel.app     ΓùÅ Ready     Production      
+2s           nazmulhasan257035-9855     
+  15h     nazmul213/portfolio     https://portfolio-bzsm2rdf1-nazmul213.vercel.app     ΓùÅ Ready     Production      
+4s           nazmulhasan257035-9855     
+
+https://portfolio-l4l8koos5-nazmul213.vercel.app
+https://portfolio-kqbnm5df4-nazmul213.vercel.app
+https://portfolio-byaabb072-nazmul213.vercel.app
+https://portfolio-3ieymrnuy-nazmul213.vercel.app
+https://portfolio-ple97b0kf-nazmul213.vercel.app
+https://portfolio-q1f4q59yj-nazmul213.vercel.app
+https://portfolio-lil35f47k-nazmul213.vercel.app
+https://portfolio-716goshc8-nazmul213.vercel.app
+https://portfolio-746x3gddd-nazmul213.vercel.app
+https://portfolio-m5jjsd72n-nazmul213.vercel.app
+https://portfolio-5w5g2xqwr-nazmul213.vercel.app
+https://portfolio-qag61199g-nazmul213.vercel.app
+https://portfolio-2q6udycny-nazmul213.vercel.app
+https://portfolio-ceoro7dc1-nazmul213.vercel.app
+https://portfolio-hactv15yk-nazmul213.vercel.app
+https://portfolio-q7z2my0no-nazmul213.vercel.app
+https://portfolio-3wwt0k97r-nazmul213.vercel.app
+https://portfolio-f2afhp2pf-nazmul213.vercel.app
+https://portfolio-kayagx4hs-nazmul213.vercel.app
+https://portfolio-bzsm2rdf1-nazmul213.vercel.app
+> To display the next page, run `vercel ls --cwd E:\nazmul-projects\portfolio --next 1782059813573`

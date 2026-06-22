@@ -1,0 +1,26 @@
+﻿npx.cmd : Vercel CLI 54.14.5 (Node.js 24.16.0)
+At line:1 char:26
++ ... Seconds 45; npx.cmd vercel ls --cwd "E:\nazmul-projects\portfolio" 2> ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 54.14.5 (Node.js 24.16.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Retrieving projectΓÇª
+Fetching deployments in nazmul213
+> Deployments for nazmul213/portfolio [370ms]
+https://portfolio-jvddo4gaq-nazmul213.vercel.app
+https://portfolio-l4l8koos5-nazmul213.vercel.app
+https://portfolio-kqbnm5df4-nazmul213.vercel.app
+https://portfolio-byaabb072-nazmul213.vercel.app
+https://portfolio-3ieymrnuy-nazmul213.vercel.app
+https://portfolio-ple97b0kf-nazmul213.vercel.app
+https://portfolio-q1f4q59yj-nazmul213.vercel.app
+https://portfolio-lil35f47k-nazmul213.vercel.app
+https://portfolio-716goshc8-nazmul213.vercel.app
+https://portfolio-746x3gddd-nazmul213.vercel.app
+https://portfolio-m5jjsd72n-nazmul213.vercel.app
+https://portfolio-5w5g2xqwr-nazmul213.vercel.app
+https://portfolio-qag61199g-nazmul213.vercel.app
+https://portfolio-2q6udycny-nazmul213.vercel.app
+https://portfolio-ceoro7dc1-nazmul213.vercel.app
+https://portfolio-hactv15yk-nazmul213.vercel.app

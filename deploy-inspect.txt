@@ -1,0 +1,31 @@
+﻿npx.cmd : Vercel CLI 54.14.5 (Node.js 24.16.0)
+At line:1 char:26
++ ... Seconds 30; npx.cmd vercel inspect --cwd "E:\nazmul-projects\portfoli ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 54.14.5 (Node.js 24.16.0):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Fetching deployment "portfolio-l4l8koos5-nazmul213.vercel.app" in nazmul213
+> Fetched deployment "portfolio-l4l8koos5-nazmul213.vercel.app" in nazmul213 [489ms]
+
+  General
+
+    id		dpl_JAtv1hP73CvRxkTMJyCUGFv8zPaz
+    name	portfolio
+    target	production
+    status	UNKNOWN
+    url		https://portfolio-l4l8koos5-nazmul213.vercel.app
+    created	Mon Jun 22 2026 13:57:06 GMT+0600 (Bangladesh Standard Time) [3m ago]
+
+
+  Aliases
+
+    Γò╢ https://portfolio-nazmul213.vercel.app
+    Γò╢ https://portfolio-nazmulhasan257035-9855-nazmul213.vercel.app
+    
+
+  Builds
+
+    Γò╢ .        [0ms]
+    
+
