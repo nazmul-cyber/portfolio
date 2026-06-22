@@ -93,18 +93,6 @@ function getServiceGithubRepo(slug) {
 
 const PORTFOLIO_BASE = 'https://portfolio-eight-red-48.vercel.app';
 
-const FEATURED_SERVICE_LINKS = [
-  { label: 'web-app-development', slug: 'web-app-development' },
-  { label: 'seo-optimization-services', slug: 'seo-optimization' },
-  { label: 'website-speed-optimization', slug: 'website-speed-fix' },
-  { label: 'payment-gateway-integration', slug: 'us-payment-gateway' },
-  { label: 'shopify-store-services', slug: 'shopify-setup' },
-  { label: 'us-llc-formation', slug: 'us-llc-formation' },
-  { label: 'digital-marketing-services', slug: 'digital-marketing' },
-  { label: 'zuomio-store', slug: 'ecommerce-store-build' },
-  { label: 'arafatllc-shop', slug: 'ecommerce-store-build' },
-];
-
 function getServicePageUrl(slug, absolute = false) {
   const path = `service.html?slug=${slug}`;
   return absolute ? `${PORTFOLIO_BASE}/${path}` : path;
@@ -388,6 +376,11 @@ PORTFOLIO_SERVICES.forEach((service) => {
 });
 
 const SERVICE_GITHUB_REPOS = [...new Set(PORTFOLIO_SERVICES.map(s => s.githubRepo).filter(Boolean))];
+
+const FEATURED_SERVICE_LINKS = PORTFOLIO_SERVICES.map(s => ({
+  label: s.name,
+  slug: s.slug,
+}));
 
 function getServiceBySlug(slug) {
   return PORTFOLIO_SERVICES.find(s => s.slug === slug);

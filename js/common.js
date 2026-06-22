@@ -341,12 +341,14 @@ function initHireCardLinks(container) {
 
 function renderServiceRepos(container) {
   if (!container || typeof FEATURED_SERVICE_LINKS === 'undefined') return;
-  const items = FEATURED_SERVICE_LINKS.map(item => `
+  const items = FEATURED_SERVICE_LINKS.map(item => {
+    const service = getServiceBySlug(item.slug);
+    return `
     <li>
       <a href="${getFeaturedServiceUrl(item)}">${item.label}</a>
-      <span class="service-repos-repo">${getFeaturedServiceName(item)}</span>
-    </li>
-  `).join('');
+      <span class="service-repos-repo">${service ? `from ${formatPrice(service.price)}` : ''}</span>
+    </li>`;
+  }).join('');
 
   container.innerHTML = `
     <section class="service-repos reveal">
@@ -354,7 +356,7 @@ function renderServiceRepos(container) {
         <svg class="service-repos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
         Services Repos
       </h2>
-      <p class="service-repos-desc">Order services directly from this portfolio — prices in ৳, add to cart or WhatsApp order.</p>
+      <p class="service-repos-desc">All 17 services — order with prices in ৳, add to cart or WhatsApp.</p>
       <ul class="service-repos-list">${items}</ul>
     </section>
   `;

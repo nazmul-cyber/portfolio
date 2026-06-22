@@ -1,28 +1,50 @@
 === GITHUB PROFILE — nazmul-cyber ===
 https://github.com/nazmul-cyber
 
-Go to: https://github.com/settings/profile
+Profile README file: E:\nazmul-projects\nazmul-cyber\README.md
+(Copy entire content into repo named: nazmul-cyber)
 
-Name:        MD NAZMUL HASAN
-Bio:         Web App Developer | SEO Specialist | E-Commerce Entrepreneur | US & BD Payment Gateway | Zuomio LLC & Arafat LLC | Bangladesh
-Pronouns:    he/him
-Company:     Zuomio LLC
-Location:    Bangladesh
-Website:     (your portfolio URL)
+=== PORTFOLIO (main website) ===
+https://portfolio-eight-red-48.vercel.app/
 
-Social accounts:
-  1. https://www.linkedin.com/in/nazmul-hasan-619565291/
-  2. https://www.facebook.com/nazmul.hasan.alif.03/
-  3. https://zuomio.com
+=== PORTFOLIO PAGES ===
+Home:      https://portfolio-eight-red-48.vercel.app/
+Services:  https://portfolio-eight-red-48.vercel.app/services.html
+Projects:  https://portfolio-eight-red-48.vercel.app/projects.html
+Why Hire:  https://portfolio-eight-red-48.vercel.app/why-hire.html
+FAQ:       https://portfolio-eight-red-48.vercel.app/faq.html
+Order:     https://portfolio-eight-red-48.vercel.app/order.html
+Contact:   https://portfolio-eight-red-48.vercel.app/#contact
 
-=== PROFILE README REPO ===
-Create repo named exactly: nazmul-cyber
-Copy content from: C:\Users\User\nazmul-cyber\README.md
+=== LIVE STORES ===
+Zuomio:        https://zuomio.com
+Bubu & Dudu:   https://bubu-dudu.store/
+MediaCube:     https://mediacube.store
+Lumiere:       https://lumiere-beauty-five.vercel.app
+Arafat LLC:    https://arafatllc.shop
 
-=== PIN THESE REPOS ===
-- web-app-development
-- seo-optimization-services
-- website-speed-optimization
-- zuomio-store
-- mediacube-store
-- payment-gateway-integration
+=== 17 SERVICES (portfolio order links) ===
+1.  Web App Development      — slug=web-app-development      — ৳15,000
+2.  Tailored Website         — slug=tailored-website         — ৳20,000
+3.  SEO Optimization         — slug=seo-optimization         — ৳6,000
+4.  Website Speed Fix        — slug=website-speed-fix        — ৳4,500
+5.  US LLC Formation         — slug=us-llc-formation         — ৳10,000
+6.  Mercury Bank Setup       — slug=mercury-bank-setup       — ৳8,000
+7.  Stripe Payment Setup     — slug=stripe-setup             — ৳8,000
+8.  Shopify Store Setup      — slug=shopify-setup            — ৳12,000
+9.  E-Commerce Store Build   — slug=ecommerce-store-build    — ৳15,000
+10. US Payment Gateway       — slug=us-payment-gateway       — ৳8,000
+11. BD Payment Gateway       — slug=bd-payment-gateway       — ৳5,000
+12. Digital Marketing        — slug=digital-marketing        — ৳10,000
+13. Meta Ads Specialist      — slug=meta-ads                 — ৳9,000
+14. Google Ads Specialist    — slug=google-ads               — ৳9,000
+15. AI Automation            — slug=ai-automation            — ৳10,000
+16. Video Editing            — slug=video-editing            — ৳6,000
+17. Amazon Business          — slug=amazon-business          — ৳9,000
+
+URL format: https://portfolio-eight-red-48.vercel.app/service.html?slug=SLUG
+
+=== CONTACT ===
+Email:    nazmulhasan257038@gmail.com
+WhatsApp: +8801969827902
+LinkedIn: https://www.linkedin.com/in/nazmul-hasan-619565291/
