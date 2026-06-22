@@ -1401,7 +1401,12 @@ body {
   line-height: 1.5;
 }
 
-.skill-showcase-card a { color: var(--accent); text-decoration: none; }
+.skill-showcase-card a:not(.skill-action-btn) { color: var(--accent); text-decoration: none; }
+
+.skill-showcase-card a.skill-action-btn--github,
+.skill-showcase-card a.skill-action-btn--github:hover {
+  color: #fff;
+}
 
 .skill-showcase-card--link {
   text-decoration: none;
