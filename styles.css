@@ -1449,14 +1449,14 @@ body {
 }
 
 .skill-action-btn--github {
-  background: #334155;
+  background: #181717;
   color: #fff;
-  border-color: #334155;
+  border-color: #181717;
 }
 
 .skill-action-btn--github:hover {
-  background: #475569;
-  border-color: #475569;
+  background: #333;
+  border-color: #333;
   color: #fff;
 }
 
@@ -1508,14 +1508,14 @@ body {
 }
 
 .btn-github {
-  background: #334155;
+  background: #181717;
   color: #fff;
-  border: 1px solid #334155;
+  border: 1px solid #181717;
 }
 
 .btn-github:hover {
-  background: #475569;
-  border-color: #475569;
+  background: #333;
+  border-color: #333;
   color: #fff;
 }
 
