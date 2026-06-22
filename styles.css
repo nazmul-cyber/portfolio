@@ -1290,6 +1290,12 @@ body {
 
 .contact-item--whatsapp .contact-icon { color: var(--whatsapp); }
 
+.contact-item--github:hover { border-color: #0d9488; }
+
+.contact-item--github .contact-label { color: #0d9488; }
+
+.contact-item--github .contact-icon { color: #0d9488; }
+
 .contact-icon {
   width: 20px;
   height: 20px;
@@ -1443,14 +1449,14 @@ body {
 }
 
 .skill-action-btn--github {
-  background: #181717;
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
   color: #fff;
-  border-color: #181717;
+  border-color: #0f766e;
 }
 
 .skill-action-btn--github:hover {
-  background: #333;
-  border-color: #333;
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  border-color: #0d9488;
 }
 
 .skill-action-btn--download {
@@ -1498,6 +1504,18 @@ body {
 .btn-outline:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.btn-github {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+  color: #fff;
+  border: 1px solid #0f766e;
+}
+
+.btn-github:hover {
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  border-color: #0d9488;
+  color: #fff;
 }
 
 .skill-badge {
