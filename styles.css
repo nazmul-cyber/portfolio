@@ -247,13 +247,12 @@ body {
 
 /* Hero */
 .hero {
-  padding: calc(var(--nav-h) + 48px) 0 64px;
+  padding: calc(var(--nav-h) + 56px) 0 64px;
   overflow: visible;
   background:
-    radial-gradient(ellipse 55% 45% at 50% 8%, rgba(255, 255, 255, 0.95) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 50% at 80% 10%, rgba(236, 72, 153, 0.14) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 50% at 10% 30%, rgba(37, 99, 235, 0.16) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 80%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 50% at 80% 10%, rgba(236, 72, 153, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 30%, rgba(37, 99, 235, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 80%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
     linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   position: relative;
 }
@@ -267,6 +266,13 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  overflow: visible;
+  position: relative;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badges {
@@ -274,6 +280,9 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+  padding-top: 2px;
 }
 
 .hero-badge {
@@ -500,6 +509,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-photo img,
@@ -3046,11 +3057,11 @@ a.btn-github:hover {
   .nav-logo-sub { display: none; }
 
   .hero {
-    padding: calc(var(--nav-h) + 16px) 0 40px;
+    padding: calc(var(--nav-h) + 28px) 0 40px;
     background:
-      radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.98) 0%, rgba(255, 240, 248, 0.55) 28%, transparent 62%),
-      radial-gradient(ellipse 80% 55% at 85% 5%, rgba(236, 72, 153, 0.16) 0%, transparent 55%),
-      radial-gradient(ellipse 70% 50% at 12% 22%, rgba(37, 99, 235, 0.14) 0%, transparent 55%),
+      radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 245, 250, 0.25) 35%, transparent 58%),
+      radial-gradient(ellipse 80% 55% at 85% 5%, rgba(236, 72, 153, 0.1) 0%, transparent 55%),
+      radial-gradient(ellipse 70% 50% at 12% 22%, rgba(37, 99, 235, 0.1) 0%, transparent 55%),
       linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   }
 
@@ -3083,21 +3094,22 @@ a.btn-github:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4px auto 14px;
+    margin: 0 auto 28px;
     width: min(280px, 78vw);
     height: min(280px, 78vw);
     border-radius: 50%;
     flex-shrink: 0;
+    z-index: 1;
+    isolation: isolate;
   }
 
   .hero-photo-glow {
     display: block;
     position: absolute;
-    inset: -18px;
+    inset: -8px;
     border-radius: 50%;
     background:
-      radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(236, 72, 153, 0.12) 42%, rgba(37, 99, 235, 0.08) 68%, transparent 78%);
-    filter: blur(2px);
+      radial-gradient(circle, rgba(255, 255, 255, 0.65) 0%, rgba(236, 72, 153, 0.06) 50%, transparent 72%);
     z-index: 0;
     pointer-events: none;
   }
@@ -3113,17 +3125,23 @@ a.btn-github:hover {
     object-fit: cover;
     object-position: center 22%;
     margin: 0;
-    border: 5px solid rgba(255, 255, 255, 0.98);
+    border: 4px solid rgba(255, 255, 255, 0.95);
     box-shadow:
-      0 0 0 1px rgba(236, 72, 153, 0.12),
-      0 0 36px rgba(236, 72, 153, 0.22),
-      0 0 52px rgba(37, 99, 235, 0.14),
-      0 14px 32px rgba(15, 23, 42, 0.12);
+      0 0 0 1px rgba(236, 72, 153, 0.08),
+      0 10px 28px rgba(15, 23, 42, 0.1);
   }
 
   .hero-text {
     text-align: left;
     max-width: 100%;
+    position: relative;
+    z-index: 3;
+    margin-top: 4px;
+  }
+
+  .hero-badges {
+    padding-top: 4px;
+    margin-bottom: 14px;
   }
 
   .hero-text h1 {
