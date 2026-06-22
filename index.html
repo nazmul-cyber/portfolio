@@ -23,42 +23,41 @@
   <script src="js/social-meta.js" defer></script>
   <script src="js/perf.js" defer></script>
   <meta name="author" content="MD Nazmul Hasan" />
-  <link rel="stylesheet" href="styles.min.css?v=perf39" />
-  <style>
-    .nav{contain:layout style}
-    .hero-photo-img{max-width:100%;height:auto}
-  </style>
+  <link rel="stylesheet" href="styles.min.css?v=perf40" />
 </head>
 <body>
   <nav class="nav" id="site-nav"></nav>
 
   <main>
     <section class="hero" id="hero">
+      <div class="hero-banner" aria-hidden="true">
+        <span class="hero-blob hero-blob--1"></span>
+        <span class="hero-blob hero-blob--2"></span>
+        <span class="hero-blob hero-blob--3"></span>
+      </div>
       <div class="container hero-grid">
         <div class="hero-text">
-          <div class="hero-badges">
-            <span class="hero-badge" data-i18n="badge.bd">Bangladesh</span>
-            <span class="hero-badge hero-badge--expert" data-i18n="badge.expert">Web Developer</span>
-            <span class="hero-badge" data-i18n="badge.kuet">KUET · Energy Science & Engineering</span>
-            <span class="hero-badge" data-i18n="badge.owner">Multi-Business Owner</span>
-            <span class="hero-badge hero-badge--accent" data-i18n="badge.revenue">Revenue $16000+</span>
-          </div>
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Available for projects · Bangladesh</p>
           <h1>MD Nazmul Hasan <a href="assets/md-nazmul-hasan-resume.pdf" target="_blank" rel="noopener" class="hero-resume-link" data-i18n="hero.resume.link">resume</a></h1>
           <p class="hero-headline" data-i18n="hero.headline">Entrepreneur &amp; Web Developer</p>
-          <div class="skill-pills" aria-label="Skills">
-            <span class="pill">Entrepreneur</span>
-            <span class="pill">Web Developer</span>
-            <span class="pill">Website Builder</span>
-            <span class="pill">SEO</span>
-            <span class="pill">Google Ads</span>
-            <span class="pill">Meta Ads</span>
-            <span class="pill">AI Automation</span>
-            <span class="pill">Video Editor</span>
+          <div class="hero-stats-strip" aria-label="Highlights">
+            <div class="hero-stat"><strong>3000+</strong><span data-i18n="stat.customers">Happy Customers</span></div>
+            <div class="hero-stat"><strong>4+</strong><span data-i18n="stat.years">Years Experience</span></div>
+            <div class="hero-stat"><strong>200+</strong><span data-i18n="stat.stores">Live Stores</span></div>
+            <div class="hero-stat hero-stat--accent"><strong>$16K+</strong><span data-i18n="hero.stat.revenue">Revenue</span></div>
           </div>
           <p class="hero-desc" data-i18n="hero.desc">
             I build websites, run e-commerce stores, and deliver digital services for clients in Bangladesh and worldwide.
             Owner of <strong>Bubu &amp; Dudu BD</strong> and <strong>Zuomio LLC</strong>.
           </p>
+          <div class="skill-pills" aria-label="Skills">
+            <span class="pill">Web Developer</span>
+            <span class="pill">SEO</span>
+            <span class="pill">Google Ads</span>
+            <span class="pill">Meta Ads</span>
+            <span class="pill">E-commerce</span>
+            <span class="pill">AI Automation</span>
+          </div>
           <div class="hero-actions">
             <a href="services.html" class="btn btn-primary" data-i18n="hero.cta.services">Order a Service</a>
             <a href="projects.html" class="btn btn-projects" data-i18n="hero.cta.projects">Live Projects</a>
@@ -67,9 +66,17 @@
               <span data-i18n="hero.cta.whatsapp">WhatsApp</span>
             </a>
           </div>
+          <div class="hero-badges">
+            <span class="hero-badge hero-badge--expert" data-i18n="badge.expert">Web Developer</span>
+            <span class="hero-badge" data-i18n="badge.kuet">KUET · Energy Science & Engineering</span>
+            <span class="hero-badge" data-i18n="badge.owner">Multi-Business Owner</span>
+          </div>
         </div>
         <div class="hero-photo">
-          <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
+          <div class="hero-photo-frame">
+            <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
+            <div class="hero-photo-badge" data-i18n="hero.photo.badge">KUET · Bangladesh</div>
+          </div>
         </div>
       </div>
     </section>
@@ -130,7 +137,7 @@
           </article>
           <article class="skill-showcase-card skill-showcase-card--pv">
             <div class="skill-showcase-icon">
-              <img src="assets/nazmul-tweaks-tool.png" alt="Nazmul Tweaks Tool software" loading="lazy" />
+              <img src="assets/nazmul-tweaks-tool.png?v=2" alt="Nazmul Tweaks Tool software" class="skill-app-logo" loading="lazy" />
             </div>
             <div>
               <h3>Nazmul Tweaks Tool</h3>
