@@ -23,25 +23,28 @@
   <script src="js/social-meta.js" defer></script>
   <script src="js/perf.js" defer></script>
   <meta name="author" content="MD Nazmul Hasan" />
-  <link rel="stylesheet" href="styles.min.css?v=perf46" />
+  <link rel="stylesheet" href="styles.min.css?v=perf47" />
 </head>
 <body>
   <nav class="nav" id="site-nav"></nav>
 
   <main>
     <section class="hero" id="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="hero-badges">
-            <span class="hero-badge" data-i18n="badge.bd">Bangladesh</span>
-            <span class="hero-badge hero-badge--expert" data-i18n="badge.expert">Web Developer</span>
-            <span class="hero-badge" data-i18n="badge.kuet">KUET · Energy Science & Engineering</span>
-            <span class="hero-badge" data-i18n="badge.owner">Multi-Business Owner</span>
-            <span class="hero-badge hero-badge--accent" data-i18n="badge.revenue">Revenue $16000+</span>
+      <div class="hero__backdrop" aria-hidden="true"></div>
+      <div class="container hero__layout">
+        <div class="hero__copy">
+          <div class="hero__badges">
+            <span class="hero__badge" data-i18n="badge.owner">Multi-Business Owner</span>
+            <span class="hero__badge hero__badge--accent" data-i18n="badge.revenue">Revenue $16000+</span>
+            <span class="hero__badge" data-i18n="badge.bd">Bangladesh</span>
+            <span class="hero__badge hero__badge--expert" data-i18n="badge.expert">Web Developer</span>
+            <span class="hero__badge" data-i18n="badge.kuet">KUET · Energy Science & Engineering</span>
           </div>
-          <h1>MD Nazmul Hasan <a href="assets/md-nazmul-hasan-resume.pdf" target="_blank" rel="noopener" class="hero-resume-link" data-i18n="hero.resume.link">resume</a></h1>
-          <p class="hero-headline" data-i18n="hero.headline">Entrepreneur &amp; Web Developer</p>
+          <h1 class="hero__title">
+            MD Nazmul Hasan
+            <a href="assets/md-nazmul-hasan-resume.pdf" target="_blank" rel="noopener" class="hero__resume" data-i18n="hero.resume.link">resume</a>
+          </h1>
+          <p class="hero__tagline" data-i18n="hero.headline">Entrepreneur &amp; Web Developer</p>
           <div class="skill-pills" aria-label="Skills">
             <span class="pill">Entrepreneur</span>
             <span class="pill">Web Developer</span>
@@ -52,11 +55,11 @@
             <span class="pill">AI Automation</span>
             <span class="pill">Video Editor</span>
           </div>
-          <p class="hero-desc" data-i18n="hero.desc">
+          <p class="hero__bio" data-i18n="hero.desc">
             I build websites, run e-commerce stores, and deliver digital services for clients in Bangladesh and worldwide.
             Owner of <strong>Bubu &amp; Dudu BD</strong> and <strong>Zuomio LLC</strong>.
           </p>
-          <div class="hero-actions">
+          <div class="hero__actions">
             <a href="services.html" class="btn btn-primary" data-i18n="hero.cta.services">Order a Service</a>
             <a href="projects.html" class="btn btn-projects" data-i18n="hero.cta.projects">Live Projects</a>
             <a href="https://wa.me/8801969827902?text=Hi%20Nazmul%2C%20I%20want%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="btn btn-whatsapp">
@@ -65,10 +68,16 @@
             </a>
           </div>
         </div>
-        <div class="hero-photo">
-          <div class="hero-photo-glow" aria-hidden="true"></div>
-          <div class="hero-photo-frame">
-            <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
+        <div class="hero__media">
+          <div class="hero__card">
+            <img
+              src="assets/source/profile-main.jpg?v=2"
+              alt="MD Nazmul Hasan"
+              class="hero__img"
+              width="400"
+              height="533"
+              onerror="this.src='assets/profile.jpg'"
+            />
           </div>
         </div>
       </div>
