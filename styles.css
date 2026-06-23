@@ -502,27 +502,27 @@ body {
 }
 
 .hero__card {
+  position: relative;
   width: 100%;
   max-width: 340px;
   margin-left: auto;
-  padding: 14px;
-  background: #ffffff;
-  border-radius: 22px;
-  border: 1px solid rgba(37, 99, 235, 0.14);
+  padding: 4px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #2563eb 0%, #7c3aed 50%, #ec4899 100%);
   box-shadow:
-    0 20px 44px rgba(15, 23, 42, 0.09),
-    0 2px 8px rgba(37, 99, 235, 0.05);
+    0 22px 46px rgba(37, 99, 235, 0.16),
+    0 8px 18px rgba(236, 72, 153, 0.1);
 }
 
 .hero__frame {
   width: 100%;
   aspect-ratio: 3 / 4;
-  border-radius: 14px;
+  border-radius: 22px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f6ff 100%);
 }
 
 .hero__img {
@@ -554,12 +554,12 @@ body {
 
   .hero__card {
     max-width: 360px;
-    padding: 16px;
-    border-radius: 24px;
+    padding: 5px;
+    border-radius: 28px;
   }
 
   .hero__frame {
-    border-radius: 16px;
+    border-radius: 23px;
   }
 }
 
@@ -3123,18 +3123,19 @@ a.btn-github:hover {
   }
 
   .hero__card {
-    width: min(268px, 78vw);
+    width: min(272px, 78vw);
     max-width: none;
     margin: 0 auto;
-    padding: 10px;
+    padding: 4px;
     border-radius: 50%;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(145deg, #2563eb 0%, #7c3aed 50%, #ec4899 100%);
     box-shadow:
-      0 12px 32px rgba(15, 23, 42, 0.08),
-      0 2px 8px rgba(37, 99, 235, 0.06);
+      0 16px 36px rgba(37, 99, 235, 0.14),
+      0 6px 14px rgba(236, 72, 153, 0.1);
   }
 
   .hero__frame {
@@ -3144,6 +3145,7 @@ a.btn-github:hover {
     min-height: 0;
     aspect-ratio: 1;
     border-radius: 50%;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f6ff 100%);
   }
 
   .hero__img {
