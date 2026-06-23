@@ -509,8 +509,8 @@ body {
   padding: 12px;
   border-radius: 24px;
   background: #ffffff;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  border: 0.5px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
 }
 
 .hero__frame {
@@ -3132,8 +3132,8 @@ a.btn-github:hover {
     align-items: center;
     justify-content: center;
     background: #ffffff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+    border: 0.5px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
   }
 
   .hero__frame {
