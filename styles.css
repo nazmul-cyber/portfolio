@@ -247,14 +247,20 @@ body {
 
 /* Hero */
 .hero {
-  padding: calc(var(--nav-h) + 56px) 0 64px;
+  padding: calc(var(--nav-h) + 52px) 0 56px;
   overflow: visible;
-  background:
-    radial-gradient(ellipse 70% 50% at 80% 10%, rgba(236, 72, 153, 0.1) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 50% at 10% 30%, rgba(37, 99, 235, 0.12) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 80%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background: linear-gradient(160deg, #ffffff 0%, #f8fafc 45%, #faf5ff 100%);
   position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 75% at 18% 45%, rgba(37, 99, 235, 0.09) 0%, transparent 62%),
+    radial-gradient(ellipse 45% 65% at 88% 35%, rgba(236, 72, 153, 0.07) 0%, transparent 58%);
+  z-index: 0;
 }
 
 .hero-photo-glow {
@@ -263,16 +269,18 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 44px;
   align-items: center;
   overflow: visible;
   position: relative;
+  z-index: 1;
 }
 
 .hero-text {
   position: relative;
   z-index: 2;
+  padding: 8px 0;
 }
 
 .hero-badges {
@@ -511,21 +519,40 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  overflow: visible;
+  background: none;
+}
+
+.hero-photo-frame {
+  width: 100%;
+  max-width: 380px;
+  margin-left: auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 28px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.08);
 }
 
 .hero-photo img,
 .hero-photo-img {
+  display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
-  aspect-ratio: 3 / 4;
-  border-radius: 24px;
-  object-fit: cover;
+  min-height: 420px;
+  max-height: 520px;
+  aspect-ratio: auto;
+  border-radius: 20px;
+  object-fit: contain;
   object-position: center center;
-  border: 1px solid var(--border);
-  box-shadow:
-    0 0 0 1px rgba(91, 130, 255, 0.08),
-    0 20px 48px rgba(15, 23, 42, 0.1);
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  border: none;
+  box-shadow: none;
   content-visibility: visible;
 }
 
@@ -540,6 +567,16 @@ body {
   object-fit: contain !important;
   background: #fff;
   padding: 4px;
+}
+
+@media (min-width: 769px) {
+  .hero-actions {
+    margin-bottom: 0;
+  }
+
+  .hero-desc {
+    max-width: 520px;
+  }
 }
 
 /* Sections */
@@ -3088,6 +3125,13 @@ a.btn-github:hover {
     font-size: 0.65rem;
   }
 
+  .hero-bg {
+    background:
+      radial-gradient(circle at 50% 14%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 245, 250, 0.22) 38%, transparent 60%),
+      radial-gradient(ellipse 80% 55% at 85% 5%, rgba(236, 72, 153, 0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 70% 50% at 12% 22%, rgba(37, 99, 235, 0.08) 0%, transparent 55%);
+  }
+
   .hero-photo {
     order: -1;
     position: relative;
@@ -3098,9 +3142,23 @@ a.btn-github:hover {
     width: min(280px, 78vw);
     height: min(280px, 78vw);
     border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
     flex-shrink: 0;
     z-index: 1;
     isolation: isolate;
+  }
+
+  .hero-photo-frame {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .hero-photo-glow {
@@ -3120,15 +3178,17 @@ a.btn-github:hover {
     z-index: 1;
     width: 100%;
     height: 100%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 22%;
+    min-height: 0;
+    max-height: none;
+    max-width: 100%;
+    aspect-ratio: auto;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center center;
     margin: 0;
-    border: 4px solid rgba(255, 255, 255, 0.95);
-    box-shadow:
-      0 0 0 1px rgba(236, 72, 153, 0.08),
-      0 10px 28px rgba(15, 23, 42, 0.1);
+    border: none;
+    box-shadow: none;
+    background: transparent;
   }
 
   .hero-text {

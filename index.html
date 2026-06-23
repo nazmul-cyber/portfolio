@@ -23,16 +23,14 @@
   <script src="js/social-meta.js" defer></script>
   <script src="js/perf.js" defer></script>
   <meta name="author" content="MD Nazmul Hasan" />
-  <link rel="stylesheet" href="styles.min.css?v=perf43" />
-  <style>
-    .hero-photo-img{max-width:100%;height:auto}
-  </style>
+  <link rel="stylesheet" href="styles.min.css?v=perf46" />
 </head>
 <body>
   <nav class="nav" id="site-nav"></nav>
 
   <main>
     <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-text">
           <div class="hero-badges">
@@ -69,7 +67,9 @@
         </div>
         <div class="hero-photo">
           <div class="hero-photo-glow" aria-hidden="true"></div>
-          <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
+          <div class="hero-photo-frame">
+            <img src="assets/source/profile-main.jpg?v=2" alt="MD Nazmul Hasan" class="hero-photo-img" width="400" height="533" onerror="this.src='assets/profile.jpg'" />
+          </div>
         </div>
       </div>
     </section>
