@@ -183,7 +183,7 @@ function renderReviews(container, service) {
         <p class="reviews-social">
           <span class="review-stars">${renderStars(Math.round(rating))}</span>
           <span class="meta-pill">${rating}</span>
-          <span class="meta-pill meta-pill--sold">${HAPPY_CUSTOMERS.toLocaleString()}+ happy customers</span>
+          <span class="meta-pill meta-pill--sold">${HAPPY_CUSTOMERS.toLocaleString()}+ happy clients</span>
           <span class="meta-pill">${EXPERIENCE_YEARS}+ years experience</span>
         </p>
       </div>

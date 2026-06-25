@@ -1849,14 +1849,20 @@ a.btn-github:hover {
 }
 
 /* Service product page */
-.service-page { padding: calc(var(--nav-h) + 24px) 0 60px; }
+.service-page {
+  padding: calc(var(--nav-h) + 36px) 0 60px;
+}
 
 .service-page--product .service-product-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 36px;
   align-items: start;
   margin-bottom: 40px;
+}
+
+.service-product-info {
+  padding-top: 0;
 }
 
 .service-product-gallery {
@@ -1920,7 +1926,20 @@ a.btn-github:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+  background: #f8fafc;
+}
+
+.service-provider-kuet {
+  display: inline-flex;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 0.65rem;
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+  line-height: 1.35;
 }
 
 .service-provider-info { min-width: 0; }
@@ -2079,6 +2098,7 @@ a.btn-github:hover {
   grid-template-columns: 1fr 260px;
   gap: 32px;
   margin-bottom: 40px;
+  align-items: start;
 }
 
 .service-trust-panel {
@@ -3179,7 +3199,6 @@ a.btn-github:hover {
     max-height: 100%;
     object-fit: contain;
     object-position: center center;
-    transform: scale(1.06);
   }
 
   .hero__copy {
@@ -3362,8 +3381,16 @@ a.btn-github:hover {
   .service-details-grid,
   .hire-grid--compact { grid-template-columns: 1fr; }
 
+  .service-page {
+    padding-top: calc(var(--nav-h) + 24px);
+  }
+
   .service-page--product .service-product-grid {
     gap: 24px;
+  }
+
+  .service-page .breadcrumb {
+    scroll-margin-top: calc(var(--nav-h) + 8px);
   }
 
   .service-product-gallery .service-hero-image {
