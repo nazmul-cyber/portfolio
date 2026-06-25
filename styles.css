@@ -3321,16 +3321,13 @@ a.btn-github:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   .hire-grid--page {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .hire-grid--page {
-    grid-template-columns: 1fr;
-  }
 
   .service-sections {
     gap: 36px;
@@ -3407,6 +3404,7 @@ a.btn-github:hover {
   }
 
   .services-preview .hire-grid,
+  .services-page-section .hire-grid--page,
   .skills-showcase .skills-grid {
     display: flex;
     flex-direction: row;
@@ -3424,6 +3422,7 @@ a.btn-github:hover {
   }
 
   .services-preview .hire-card,
+  .services-page-section .hire-grid--page .hire-card,
   .skills-showcase .skill-showcase-card {
     flex: 0 0 min(300px, 88vw);
     scroll-snap-align: none;
