@@ -45,8 +45,7 @@ body {
   line-height: 1.6;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  overflow-x: clip;
-  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -1527,51 +1526,18 @@ body {
 .page-hero {
   padding: calc(var(--nav-h) + 40px) 0 32px;
   background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
-  width: 100%;
-  max-width: 100%;
-  overflow: visible;
 }
 
 .page-hero--compact { padding-bottom: 20px; }
-
-.page-hero .container {
-  width: 100%;
-  max-width: 1080px;
-  margin-inline: auto;
-  padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px));
-  box-sizing: border-box;
-  overflow: visible;
-}
 
 .page-hero h1 {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
   margin: 8px 0;
-  margin-inline: 0;
-  padding-inline: 0;
-  max-width: 100%;
-  overflow: visible;
 }
 
-.page-hero p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  max-width: 100%;
-  overflow: visible;
-}
-
-main.services-page {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: clip;
-}
-
-.services-page-section .container,
-.services-page-section .hire-grid--page,
-.services-page-section .service-sections {
-  max-width: 100%;
-}
+.page-hero p { color: var(--text-muted); font-size: 0.95rem; }
 
 .page-pad { padding: calc(var(--nav-h) + 40px) 0 60px; }
 
@@ -3151,17 +3117,6 @@ a.btn-github:hover {
   :root { --nav-h: 64px; }
 
   .container { padding: 0 16px; }
-
-  .page-hero .container {
-    padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
-  }
-
-  .services-page-section .hire-grid--page {
-    margin-inline: 0;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: visible;
-  }
 
   .nav { padding: 0 16px; }
 

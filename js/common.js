@@ -11,13 +11,6 @@ if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-function resetHorizontalScroll() {
-  if (window.scrollX) window.scrollTo(0, window.scrollY);
-}
-
-resetHorizontalScroll();
-window.addEventListener('load', resetHorizontalScroll, { passive: true });
-
 function renderNav(active) {
   const el = document.getElementById('site-nav');
   if (!el) return;
