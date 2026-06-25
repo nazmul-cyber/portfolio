@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "perf57"
+VERSION = "perf58"
 SKIP = {"demo-fixes.html", "live-services-new.html"}
 
 for path in sorted(ROOT.glob("*.html")):

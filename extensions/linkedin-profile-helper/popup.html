@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Profile Helper</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="icons/icon48.png" alt="" width="28" height="28" />
+    <div>
+      <h1>LinkedIn Helper</h1>
+      <p>MD Nazmul Hasan</p>
+    </div>
+  </header>
+
+  <p class="tip"><strong>Auto-fill:</strong> Headline → profile-এ <em>pencil (Edit intro)</em> ক্লিক → Auto-fill। About → <em>Edit About</em> → Auto-fill। না হলে <strong>Copy</strong> use করুন।</p>
+
+  <div id="sections"></div>
+
+  <section class="featured">
+    <h2>Featured links</h2>
+    <ul id="featuredList"></ul>
+  </section>
+
+  <footer>
+    <button type="button" id="openLinkedIn" class="btn btn-primary">Open LinkedIn Profile</button>
+  </footer>
+
+  <script src="profile-data.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -67,12 +67,14 @@ main {
   box-sizing: border-box;
 }
 
-/* Nav */
-.nav {
-  position: fixed;
+/* Nav — sticky on every page */
+.nav,
+#site-nav {
+  position: sticky !important;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   height: var(--nav-h);
   min-height: var(--nav-h);
   box-sizing: border-box;
@@ -84,7 +86,7 @@ main {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 1px 12px rgba(15, 23, 42, 0.04);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .nav-logo {
@@ -264,7 +266,7 @@ main {
 .hero {
   position: relative;
   overflow: visible;
-  padding: var(--nav-h) 0 48px;
+  padding: 48px 0 48px;
   background:
     linear-gradient(118deg, #ffffff 0%, #f0f7ff 38%, #faf5ff 72%, #fff5f8 100%);
 }
@@ -1537,7 +1539,7 @@ main {
 
 /* Page hero (inner pages) */
 .page-hero {
-  padding: calc(var(--nav-h) + 40px) 0 32px;
+  padding: 40px 0 32px;
   background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
   width: 100%;
   max-width: 100%;
@@ -1572,7 +1574,7 @@ main {
   overflow: visible;
 }
 
-.page-pad { padding: calc(var(--nav-h) + 40px) 0 60px; }
+.page-pad { padding: 40px 0 60px; }
 
 /* Skills showcase */
 .skills-showcase { background: var(--bg-soft); }
@@ -1885,7 +1887,7 @@ a.btn-github:hover {
 
 /* Service product page */
 .service-page {
-  padding: calc(var(--nav-h) + 48px) 0 60px;
+  padding: 48px 0 60px;
 }
 
 .page-service #serviceContent {
@@ -2813,7 +2815,7 @@ a.btn-github:hover {
 
 /* Policy pages */
 .policy-page {
-  padding: calc(var(--nav-h) + 40px) 0 60px;
+  padding: 40px 0 60px;
 }
 
 .policy-page h1 {
@@ -3158,7 +3160,7 @@ a.btn-github:hover {
   .nav-logo-sub { display: none; }
 
   .hero {
-    padding: var(--nav-h) 0 36px;
+    padding: 36px 0 36px;
     background:
       radial-gradient(circle at 50% 8%, rgba(255, 255, 255, 0.85) 0%, transparent 50%),
       linear-gradient(180deg, #ffffff 0%, #f4f8ff 55%, #faf5ff 100%);
@@ -3418,7 +3420,7 @@ a.btn-github:hover {
   .hire-grid--compact { grid-template-columns: 1fr; }
 
   .service-page {
-    padding-top: calc(var(--nav-h) + 40px);
+    padding-top: 40px;
   }
 
   .service-page--product .service-product-grid {
