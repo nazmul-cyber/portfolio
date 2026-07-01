@@ -4,7 +4,7 @@
     title: 'MD Nazmul Hasan — Web Developer · Google Ads · Meta Ads',
     description: 'Hire MD Nazmul Hasan for web development, Google Ads, Meta Ads, SEO, e-commerce stores & more. 200+ happy clients · Revenue $3000+ · 4+ years experience.',
     image: SITE_URL + '/assets/og-share.jpg?v=circle2',
-    url: SITE_URL + '/index.html',
+    url: SITE_URL + '/',
     type: 'website'
   };
 
